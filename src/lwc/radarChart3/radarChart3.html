@@ -1,0 +1,31 @@
+<!--
+ - @description       :
+ - @author            : tak99
+ - @group             :
+ - @last modified on  : 2024-01-05
+ - @last modified by  : tak99
+ - Modifications Log
+ - Ver      Date         Author      Modification
+ - 1.0      2024-01-05      tak99   Initial Version
+ -->
+
+<!-- Radar Chart 3 -->
+<template>
+    <lightning-card class="slds-size_1-of-1" title="ChartJS 3">
+        <lightning-layout>
+            <lightning-layout-item >
+                    <lightning-combobox
+                            label="비교 대상 선택"
+                            placeholder="--None--"
+                            value={DataNameValue}
+                            options={DataNameList}
+                            onchange={handleChangeProduct}
+                    >
+                    </lightning-combobox>
+            </lightning-layout-item>
+            <lightning-layout-item >
+                <div class="chart"></div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
