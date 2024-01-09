@@ -20,17 +20,6 @@ public with sharing class radarChartController {
         ];
     }
 
-
-    @AuraEnabled(cacheable=true)
-    public static List<cosmax_example__c> getDataList(String recordId){
-        return
-        [
-                SELECT  Id, Name, ProductGrade1__c, ProductGrade2__c, ProductGrade3__c, ProductGrade4__c, ProductGrade5__c
-                FROM    cosmax_example__c
-                WHERE   Id =: recordId
-        ];
-    }
-
     @AuraEnabled(cacheable=true)
     public static cosmax_example__c getData(String recordId){
         return
@@ -52,21 +41,6 @@ public with sharing class radarChartController {
                 LIMIT   1
         ];
     }
-
-
-    @AuraEnabled(Cacheable=true)
-    public static List<cosmax_example__c> getCompareDataList(String recordId){
-        System.debug('recodId :: ' + recordId);
-
-        return
-        [
-                SELECT  Id, Name, ProductGrade1__c, ProductGrade2__c, ProductGrade3__c, ProductGrade4__c, ProductGrade5__c
-                FROM    cosmax_example__c
-                WHERE   Id =: recordId
-        ];
-
-    }
-
 
 
     @AuraEnabled(cacheable=true)

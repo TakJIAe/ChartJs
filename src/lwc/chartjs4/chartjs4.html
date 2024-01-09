@@ -1,0 +1,45 @@
+<!--
+ - @description       :
+ - @author            : tak99
+ - @group             :
+ - @last modified on  : 2024-01-09
+ - @last modified by  : tak99
+ - Modifications Log
+ - Ver      Date         Author      Modification
+ - 1.0      2024-01-09      tak99   Initial Version
+ -->
+
+<!-- Chartjs 4 -->
+<template>
+    <div class="slds-grid slds-grid_vertical">
+        <div class="slds-col">
+            <lightning-combobox
+                    label="Chart 선택"
+                    required=true
+                    value={selectedChartValue}
+                    options={ChartOptions}
+                    onchange={handleChangeOptions}
+            >
+            </lightning-combobox>
+            <div class="slds-grid slds-grid" style="margin-top:20px">
+                <div style="margin-right:10px">
+
+                    <lightning-button
+                            label="add Chart"
+                            onclick={handleClick}>
+                    </lightning-button>
+                </div>
+                <lightning-button
+                        label="delete Chart"
+                        onclick={handleClick}>
+                </lightning-button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="slds-col" style="margin-top:30px">
+        <div class="chart"></div>
+    </div>
+    </div>
+</template>

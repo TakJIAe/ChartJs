@@ -81,8 +81,8 @@ export default class RadarChart3 extends LightningElement {
         options.push({label:'radar',value:'radar'});
         options.push({label:'doughnut',value:'doughnut'});
         options.push({label:'pie',value:'pie'});
-        options.push({label:'bubble',value:'bubble'});
-        options.push({label:'scatter',value:'scatter'});
+//        options.push({label:'bubble',value:'bubble'});
+//        options.push({label:'scatter',value:'scatter'});
         this.ChartOptions = options;
     }
 
@@ -90,8 +90,25 @@ export default class RadarChart3 extends LightningElement {
         let changeOptions = event.detail.value;
         if(changeOptions != null && changeOptions != '' && changeOptions != undefined){
             this.selectedChartValue = changeOptions;
+
+            if(this.chartValue){
+                this.chartValue.destroy();
+            }
+
+            // create Chart
+            const canvas = document.createElement('canvas');
+            this.template.querySelector('div.chart').innerHTML = ''; // add Clear the chart container(dom)
+            this.template.querySelector('div.chart').appendChild(canvas);
+            const ctx = canvas.getContext('2d');
+            if(this.selectedChartValue != null && this.selectedChartValue != ''){
+                this.chartValue = new Chart(ctx, {
+                    type: this.selectedChartValue,
+                    data: this.chartValue.data
+                });
+            }
+            this.chartValue.update();
         }
-        console.log('this.selectedChart :: ' + this.selectedChartValue);
+
     }
 
     getDataNameList(){
@@ -242,7 +259,14 @@ export default class RadarChart3 extends LightningElement {
                     },
                     responsive: true,
                     legend: { position: 'right'},
-                    ticks:{ stepSize : 0.5},
+                    scale:{
+                        ticks: {
+                            beginAtZero: true,
+                            min:1,
+                            max:5,
+                            stepSize: 0.5
+                        }
+                    }
                 }
             }
 
