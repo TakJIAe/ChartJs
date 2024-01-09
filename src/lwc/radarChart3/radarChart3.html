@@ -11,21 +11,29 @@
 
 <!-- Radar Chart 3 -->
 <template>
-    <lightning-card class="slds-size_1-of-1" title="ChartJS 3">
-        <lightning-layout>
-            <lightning-layout-item >
-                    <lightning-combobox
-                            label="비교 대상 선택"
-                            placeholder="--None--"
-                            value={DataNameValue}
-                            options={DataNameList}
-                            onchange={handleChangeProduct}
-                    >
-                    </lightning-combobox>
-            </lightning-layout-item>
-            <lightning-layout-item >
-                <div class="chart"></div>
-            </lightning-layout-item>
-        </lightning-layout>
-    </lightning-card>
+    <div class="slds-grid slds-grid_vertical">
+        <div class="slds-col">
+            <lightning-combobox
+                    label="Chart 선택"
+                    required=true
+                    value={selectedChartValue}
+                    options={ChartOptions}
+                    onchange={handleChangeOptions}
+            >
+            </lightning-combobox>
+
+            <lightning-combobox
+                    label="비교 대상 선택"
+                    placeholder="--None--"
+                    value={DataNameValue}
+                    options={DataNameList}
+                    onchange={handleChangeProduct}
+            >
+            </lightning-combobox>
+        </div>
+        <div class="slds-col" style="margin-top:30px">
+            <div class="chart"></div>
+        </div>
+    </div>
+
 </template>
