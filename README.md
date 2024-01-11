@@ -11,6 +11,7 @@
 1. staticresource 코드 다운 (ver.2.7.3)
    * ver.2.8.0 은 동작 안되는 기능이 있었음 (차트 점에 마우스 올리면 숫자 표시되는 기능)
    * 버전마다 이슈가 있어서 사용 전 파악 필요
+   * 링크 : <https://github.com/TakJIAe/ChartJs/blob/master/src/staticresource>
 2. Org, Setup> StaticResource New 생성
    * File로 다운 받은 코드 선택
    * 설정된 Name으로 LWC에서 import됨
