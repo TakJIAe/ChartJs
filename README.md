@@ -1,6 +1,6 @@
 # Chart.js in Salesforce
 
-###참고 사이트
+### 참고 사이트
 1. 공식 문서 <https://www.chartjs.org/>
 2. https://www.avideep.com/chartjs-in-salesforce-lwc/
 3. https://medium.com/@ishaarora_49656/add-dynamic-data-to-chart-in-lwc-9d88e8b4516e
@@ -8,10 +8,12 @@
 <br>
 
 ### Setting
-Org에 **Static Resource **추가 (ver.2.7.3)
-  * staticresource 코드 다운 후 추가하면 됨.. 파일 올려두었음 ! 
-  * ver.2.8.0 은 동작 안되는 기능이 있었음 (차트 점에 마우스 올리면 숫자 표시되는 기능)
-  * 버전마다 이슈가 있어서 사용 전 파악 필요
+1. staticresource 코드 다운 (ver.2.7.3)
+   * ver.2.8.0 은 동작 안되는 기능이 있었음 (차트 점에 마우스 올리면 숫자 표시되는 기능)
+   * 버전마다 이슈가 있어서 사용 전 파악 필요
+2. Org, Setup> StaticResource New 생성
+   * File로 다운 받은 코드 선택
+   * 설정된 Name으로 LWC에서 import됨
 
 <br>
 <br>
