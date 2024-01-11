@@ -23,7 +23,8 @@
 1. 서로 다른 레코드 비교 차트
    * Record 정보 가져와 차트 그리기
    * 차트 유형 변경
-
+   * 링크 : <https://github.com/TakJIAe/ChartJs/tree/master/src/lwc/radarChart3>
+     
      ![활용 예시 1](https://github.com/TakJIAe/ChartJs/assets/58765875/bd20a4ca-5028-4094-bbdf-5aa54c6e0574)
 
 <br>
@@ -31,5 +32,6 @@
 2. 기본 동작 차트
    * 랜덤 데이터 생성/삭제
    * 차트 유형 변경
-   
+   * 링크 : <https://github.com/TakJIAe/ChartJs/tree/master/src/lwc/chartjs4>
+     
      ![활용 예시 2](https://github.com/TakJIAe/ChartJs/assets/58765875/d73737d2-5666-443f-86a5-00ed72b9f197)
