@@ -1,9 +1,11 @@
 # Chart.js in Salesforce
 
-참고 사이트
+###참고 사이트
 1. 공식 문서 <https://www.chartjs.org/>
 2. https://www.avideep.com/chartjs-in-salesforce-lwc/
 3. https://medium.com/@ishaarora_49656/add-dynamic-data-to-chart-in-lwc-9d88e8b4516e
+
+<br>
 
 ### Setting
 Org에 **Static Resource **추가 (ver.2.7.3)
@@ -16,14 +18,16 @@ Org에 **Static Resource **추가 (ver.2.7.3)
 
 
 ### 활용 예시
-1. 2개의 레코드 비교 차트
-  * Record 정보 가져와 차트 그리기
-  * 차트 유형 변경
-  * 예시 화면 동작
-![활용 예시 1](https://github.com/TakJIAe/ChartJs/assets/58765875/bd20a4ca-5028-4094-bbdf-5aa54c6e0574)
+1. 서로 다른 레코드 비교 차트
+   * Record 정보 가져와 차트 그리기
+   * 차트 유형 변경
 
+     ![활용 예시 1](https://github.com/TakJIAe/ChartJs/assets/58765875/bd20a4ca-5028-4094-bbdf-5aa54c6e0574)
+
+<br>
 
 2. 기본 동작 차트
    * 랜덤 데이터 생성/삭제
    * 차트 유형 변경
-![활용 예시 2](https://github.com/TakJIAe/ChartJs/assets/58765875/d73737d2-5666-443f-86a5-00ed72b9f197)
+   
+     ![활용 예시 2](https://github.com/TakJIAe/ChartJs/assets/58765875/d73737d2-5666-443f-86a5-00ed72b9f197)
