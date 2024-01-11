@@ -1,4 +1,4 @@
-# Chart.js + Salesforce
+# Chart.js in Salesforce
 
 참고 사이트
 1. 공식 문서 <https://www.chartjs.org/>
