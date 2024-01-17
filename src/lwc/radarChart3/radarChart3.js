@@ -1,14 +1,3 @@
-/**
- * @description       :
- *
- * @author            : tak99
- * @group             :
- * @last modified on  : 2024-01-05
- * @last modified by  : tak99
- * Modifications Log
- * Ver     Date             Author               Modification
- * 1.0   2024-01-05   tak99   Initial Version
- */
 import { LightningElement, api, track, wire} from 'lwc';
 //import chartjs from '@salesforce/resourceUrl/ChartJs'; // version 2.8.0
 import chartjs from '@salesforce/resourceUrl/chartJS273'; // version 2.7.3
