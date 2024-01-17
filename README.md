@@ -25,7 +25,8 @@
    * Record 정보 가져와 차트 그리기
    * 차트 유형 변경
    * 링크 : <https://github.com/TakJIAe/ChartJs/tree/master/src/lwc/radarChart3>
-     
+     ![활용 예시 1](https://github.com/TakJIAe/ChartJs/assets/58765875/3b385be4-016d-403e-a940-3f2424cc728b)
+
 
 <br>
 
