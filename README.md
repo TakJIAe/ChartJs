@@ -26,7 +26,6 @@
    * 차트 유형 변경
    * 링크 : <https://github.com/TakJIAe/ChartJs/tree/master/src/lwc/radarChart3>
      
-     ![활용 예시 1](https://github.com/TakJIAe/ChartJs/assets/58765875/bd20a4ca-5028-4094-bbdf-5aa54c6e0574)
 
 <br>
 
