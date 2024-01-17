@@ -197,11 +197,11 @@ export default class RadarChart3 extends LightningElement {
                 let mapData = new Map();
 
                 dataName = data.Name;
-                mapData.set('커버력', data.ProductGrade1__c);
-                mapData.set('밀착력', data.ProductGrade2__c);
-                mapData.set('다크닝', data.ProductGrade3__c);
-                mapData.set('지속력', data.ProductGrade4__c);
-                mapData.set('글로우', data.ProductGrade5__c);
+                mapData.set('grade1', data.ProductGrade1__c);
+                mapData.set('grade2', data.ProductGrade2__c);
+                mapData.set('grade3', data.ProductGrade3__c);
+                mapData.set('grade4', data.ProductGrade4__c);
+                mapData.set('grade5', data.ProductGrade5__c);
 
                 mapData.forEach(function (value, key, map) {
                     listLabel.push(key); // data.labels
